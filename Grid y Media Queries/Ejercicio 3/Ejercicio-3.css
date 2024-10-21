@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 1em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li button {
+    color: white;
+    width: 10em;
+    height: 2em;
+    display: inline-block;
+    background-color: #007BFF;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 2em;
+}
+
+.grid-container img{
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #d3d3d3;
+    border: 2px solid #4470ff;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    margin: 0 0 10px;
+    position: relative;
+    color: #333;
+}
+
+.card-title::before {
+    content: '⭐';
+    margin-right: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+    position: relative;
+}
+
+.card-btn {
+    margin: 10px 0 0;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li button {
+        width: 20em;
+        height: 5em;
+    }
+
+    .card-btn{
+        width: 20em;
+        height: 5em;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

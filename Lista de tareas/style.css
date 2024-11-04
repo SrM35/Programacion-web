@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nuevaT {
+    width: 25%;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid rgb(199, 199, 199) 1px;
+    border-radius: 5px;
+}
+
+#boton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#boton:hover {
+    transform: scale(1.05);
+    background-color: rgb(41, 41, 41);
+}
+
+#boton:active {
+    background-color: rgb(121, 121, 121);
+}
+
+.tareas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.mi-clase {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    color: white;
+    margin: 5px 0;
+    background-color: rgb(184, 184, 184);
+    width: 420px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mi-clase label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.clase2 {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+}
+
+input[type="checkbox"]:hover {
+    background-color: rgba(0, 128, 0, 0.158);
+}
+
+.boton {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: rgb(206, 206, 206);
+}
